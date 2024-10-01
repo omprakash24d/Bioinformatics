@@ -1,0 +1,12 @@
+echo "# Bioinformatics" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/omprakash24d/Bioinformatics.git
+git push -u origin main
+
+Existing reposity
+git remote add origin https://github.com/omprakash24d/Bioinformatics.git
+git branch -M main
+git push -u origin main
