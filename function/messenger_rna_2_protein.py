@@ -14,7 +14,8 @@ def translate_mrna_to_protein(mrna_sequence):
         'GGC': 'G', 'GGA': 'G', 'GGG': 'G',
     }
 
-    protein_sequence = ''.join(codon_table.get(mrna_sequence[i:i+3], 'X') for i in range(0, len(mrna_sequence), 3))
+    protein_sequence = ''.join(codon_table.get(mrna_sequence[i:i+3], 'X')
+    for i in range(0, len(mrna_sequence), 3))
     print("Protein sequence:", protein_sequence)
 
 # Example mRNA sequence
