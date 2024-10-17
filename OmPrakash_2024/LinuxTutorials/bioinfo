@@ -1,0 +1,8 @@
+It is equivalent to Java's toString (converts object to a string)
+• Invoked automatically when print is called.
+
+Exercise: Write a __str__ method for shape objects that returns
+strings like "20, 30 "
+
+def __str__(self):
+return str(self.length) + ", " + str(self.width)
