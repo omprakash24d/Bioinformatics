@@ -60,15 +60,15 @@ def needleman_wunsch(seq1, seq2, match=2, mismatch=-1, gap=-2):
         f.write("Sequence 2: " + align2 + '\n')
 
     # Display the results in tabular form for easy understanding
-    print("Alignment Matrix:")
-    for row in matrix:
-        print(' '.join(map(str, row)))
+    # print("Alignment Matrix:")
+    # for row in matrix:
+    #     print(' '.join(map(str, row)))
 
-    print("\nOptimal Alignment:")
-    print("Sequence 1:", align1)
-    print("Sequence 2:", align2)
+    # print("\nOptimal Alignment:")
+    # print("Sequence 1:", align1)
+    # print("Sequence 2:", align2)
 
-    return align1, align2
+    # return align1, align2
 
 # Take inputs from the user
 sequence1 = input("Enter Sequence 1: ").upper()
@@ -79,6 +79,6 @@ mismatch_score = int(input("Enter the mismatch score: "))
 gap_penalty = int(input("Enter the gap penalty: "))
 
 # Example usage
-alignment1, alignment2 = needleman_wunsch(sequence1, sequence2, match=match_score, mismatch=mismatch_score, gap=gap_penalty)
+# alignment1, alignment2 = needleman_wunsch(sequence1, sequence2, match=match_score, mismatch=mismatch_score, gap=gap_penalty)
 
 print("\nThe details have been saved to 'needleman_wunsch_output.txt'.")
