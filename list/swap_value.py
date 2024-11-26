@@ -1,0 +1,9 @@
+my_list=[12,32,4,54]
+print(my_list[::-1])
+my_list.append(4)
+my_list.insert(4,12)
+my_list.pop()
+print(my_list)
+new_list=['Om',12,32]
+my_list.append(new_list)
+print(my_list)
